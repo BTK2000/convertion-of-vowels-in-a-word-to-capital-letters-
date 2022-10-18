@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner s = new Scanner(System.in);
+	    char[] JavaCharArray = s.next().toCharArray();
+	    int N = JavaCharArray.length;
+	   
+            for (int i=0; i < JavaCharArray.length; i++) {
+                if(JavaCharArray[i] == 'a'|| JavaCharArray[i] == 'e'|| JavaCharArray[i] == 'i' || JavaCharArray[i] == 'o' || JavaCharArray[i] == 'u'){
+                    char c = Character.toUpperCase(JavaCharArray[i]);
+                        JavaCharArray[i] = c;
+                }
+        }
+                for(char c :JavaCharArray)
+                System.out.print(c);
+	}	
+}
